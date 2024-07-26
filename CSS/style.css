@@ -1,0 +1,83 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(250, 235, 215, 0.548);
+}
+
+.card {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 180px auto;
+    border-radius: 10px;       
+
+}
+
+img {
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+
+}
+
+.info {
+    width: 50%;
+    margin-top: 20px;
+   
+}
+
+.p1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+p {
+    color: #888;
+    line-height: 1.5;
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.original {
+    color: #2b9e27a2;
+    margin-right: 10px;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.discounted{
+    font-weight: bold;
+    color: #333;
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    width: 250px;
+    height: 40px;
+    background-color: #2b9e27a2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+.add-to-cart:hover{
+    cursor: pointer;
+}
