@@ -1,83 +1,130 @@
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(250, 235, 215, 0.548);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(250, 235, 215, 0.548);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .card {
-    width: 600px;
-    height: 600px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 180px auto;
-    border-radius: 10px;       
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 
+.image-wrapper {
+  flex: 1;
+  height: 100%;
 }
 
 img {
-    width: 50%;
-    height: 100%;
-    border-radius: 8px;
-    background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: cover;
+}
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 .info {
-    width: 50%;
-    margin-top: 20px;
-   
+  flex: 1;
+  padding-inline: 1.5rem;
+  padding-block: 2.5rem;
 }
 
-.p1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.p1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-    font-size: 45px;
-    margin-bottom: 5px;
-    margin-left: 10px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 p {
-    color: #888;
-    line-height: 1.5;
-    font-size: 21px;
-    margin-left: 10px;
+  color: #888;
+  line-height: 1.5;
+  font-size: 21px;
 }
 
 .price {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .original {
-    color: #2b9e27a2;
-    margin-right: 10px;
-    font-size: 35px;
-    margin-left: 10px;
+  color: #2b9e27a2;
+  margin-right: 10px;
+  font-size: 35px;
+  margin-left: 10px;
 }
 
-.discounted{
-    font-weight: bold;
-    color: #333;
-    text-decoration: line-through;
+.discounted {
+  font-weight: bold;
+  color: #333;
+  text-decoration: line-through;
 }
 
 .add-to-cart {
-    width: 250px;
-    height: 40px;
-    background-color: #2b9e27a2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 17px;
+  background-color: #2b9e27a2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  width: 100%;
 }
-.add-to-cart:hover{
-    cursor: pointer;
+.add-to-cart:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .card {
+    margin-block: 2rem;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  img {
+    border-radius: 10px;
+  }
 }
